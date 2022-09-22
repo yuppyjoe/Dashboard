@@ -51,6 +51,7 @@ body * {
 .right-side {
   display: grid;
   grid-template-rows: 10% 90%;
+  width: 100%;
 }
 .right-side .header {
   background-color: rgb(156, 156, 170);
@@ -82,6 +83,7 @@ body * {
 .right-side .header .header-content p {
   margin-left: 1rem;
   color: aqua;
+  margin-right: 1rem;
 }
 .right-side .main-body {
   background-color: bisque;
@@ -101,6 +103,120 @@ body * {
 }
 .right-side .main-body .sale-summary-holder-item {
   display: flex;
+  justify-content: space-between;
+}
+.right-side .main-body .sale-summary-holder-item button {
+  color: gray;
+  font-size: 14px;
+  border: none;
+  background-color: aliceblue;
+}
+.right-side .main-body .sale-summary-holder-item p {
+  margin-top: 2rem;
+  color: gray;
+  font-size: 18px;
+}
+.right-side .main-body .sale-summary-holder .title {
+  display: flex;
+}
+.right-side .main-body .sale-summary-holder .title span:last-of-type {
+  margin-right: 5rem;
+}
+.right-side .main-body .sale-summary-holder .price {
+  font-size: 24;
+  margin-top: -1rem;
+}
+.right-side .main-body .sale-summary-holder .price p {
+  color: #000;
+}
+.right-side .main-body .sale-summary-holder .price p span {
+  color: green;
+  font-size: 11px;
+  margin-right: 4rem;
+}
+.right-side .main-body .sale-summary .marketing-holder {
+  grid-row: 2/4;
+  background-color: rgb(255, 255, 255);
+  margin-right: 1rem;
+  height: fit-content;
+  padding: 1rem;
+}
+.right-side .main-body .sale-summary .marketing-holder-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .main-body .sale-summary .marketing-holder-title button {
+  border: none;
+  background-color: #fff;
+  color: gray;
+}
+.right-side .main-body .sale-summary .marketing-holder-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 11px;
+  color: gray;
+}
+.right-side .main-body .sale-summary .marketing-holder-top #span-1 {
+  color: blue;
+}
+.right-side .main-body .sale-summary .marketing-holder-top #span-2 {
+  color: aqua;
+}
+.right-side .main-body .sale-summary .marketing-holder-top #span-3 {
+  color: orange;
+}
+.right-side .main-body .sale-summary .marketing-holder-chart {
+  grid-row: 2/4;
+}
+.right-side .main-body .sale-summary .marketing-holder-chart .chart-out {
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.right-side .main-body .sale-summary .marketing-holder-chart .chart-out .chart-in {
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.right-side .main-body .sale-summary .blue {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: blue;
+}
+.right-side .main-body .sale-summary .blue p {
+  color: #fff;
+}
+.right-side .main-body .sale-summary .blue p span {
+  color: #fff;
+}
+.right-side .main-body .sale-summary .cart .red p {
+  font-size: 12px;
+}
+.right-side .main-body .sale-summary .cart .red p:first-child {
+  color: red;
+}
+.right-side .main-body .sale-summary .cart .large p:last-child {
+  margin-right: 8rem;
+}
+.right-side .main-body .sale-summary .summary-holder-title {
+  display: flex;
+  flex-direction: row;
+}
+.right-side .main-body .sale-summary .summary-holder-title-1 {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */

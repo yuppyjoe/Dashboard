@@ -59,6 +59,7 @@ body {
 .right-side{
     display: grid;
     grid-template-rows: 10% 90%;
+    width: 100%;
 
     .header{
         background-color: rgb(156, 156, 170);
@@ -95,6 +96,7 @@ body {
             p{
                 margin-left: 1rem;
                 color: aqua;
+                margin-right: 1rem;
             }
         }
     }
@@ -115,10 +117,172 @@ body {
                 height: fit-content;
                 padding: 1rem;
                 margin-right: 1rem;
+
+
                 &-item{
                     display: flex;
+                    justify-content: space-between;
+
+
+                    button{
+                        color: gray;
+                        font-size: 14px;
+                        border: none;
+                        background-color: aliceblue;
+                    }
+
+                    p{
+                        margin-top: 2rem;
+                        color: gray;
+                        font-size: 18px;
+                    }
                 }
+
+                .title{
+                    display: flex;
+
+
+                    
+
+                     span:last-of-type{
+                        margin-right: 5rem;
+                     }
+                }
+
+                .price{
+                    font-size: 24;
+                    margin-top: -1rem;
+
+                    p{
+                    color: #000;
+                    
+                    span{
+                        color: green;
+                        font-size: 11px;
+                        margin-right: 4rem;
+                    }
+
+                   
+
+                    }
+                }
+
+            }
+
+
+            .marketing-holder{
+                grid-row: 2/4;
+                background-color: rgb(255, 255, 255);
+                margin-right: 1rem;
+                height: fit-content;
+                padding: 1rem;
+
+                &-title{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+
+                    button{
+                        border: none;
+                        background-color: #fff;
+                        color: gray;
+                    }
+                }
+
+                &-top{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 11px;
+                    color: gray;
+
+                    #span-1{
+                        color:blue;
+                    }
+
+                    #span-2{
+                        color:aqua;
+                    }
+
+                    #span-3{
+                        color:orange;
+                    }
+                }
+
+                &-chart{
+                    grid-row: 2/4;
+
+
+                    .chart-out{
+                        margin: 0 auto;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        width: 300px;
+                        height: 300px;
+                        background-color: gray;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        .chart-in{
+                            margin: auto;
+                            border: 1px solid white;
+                            border-radius: 50%;
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+            .blue{
+                grid-column: 2;
+                grid-row: 2;
+                background-color: blue;
+                
+                p{
+                    color: #fff;
+
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+
+            .cart{
+                .red{
+                    p{
+                        font-size: 12px;
+                    }
+                    p:first-child{
+                        color: red;
+                    }
+                }
+                .large{
+                    p:last-child{
+                        margin-right: 8rem;
+                    }
+                }
+            }
+
+            .summary-holder{
+                &-title{
+                    display: flex;
+                    flex-direction: row;
+
+                    &-1{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                }
+
             }
         }
     }
 }
+
+
+
