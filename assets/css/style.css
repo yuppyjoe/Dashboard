@@ -251,5 +251,52 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+.right-side .main-body .order-summary-items {
+  margin-top: 5rem;
+  display: flex;
+  background-color: #fff;
+}
+.right-side .main-body .order-summary-items-wrapper .title {
+  margin-left: 1rem;
+}
+.right-side .main-body .order-summary-items-wrapper .holder {
+  display: flex;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-header p:first-child {
+  margin-right: 8rem;
+  font-size: 14px;
+  margin: 0;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-header date {
+  color: gray;
+  font-size: 11px;
+  font-weight: 600;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-tag {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1rem;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-tag p:first-child {
+  margin-right: 14rem;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price-tag P:last-child {
+  font-size: 11px;
+  color: red;
+}
+.right-side .main-body .order-summary-items-wrapper .holder .price .completed P:last-child {
+  font-size: 11px;
+  color: green;
+}
 
 /*# sourceMappingURL=style.css.map */
