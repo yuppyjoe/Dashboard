@@ -7,6 +7,13 @@ body {
     }
   }
 
+  button{
+    color: gray;
+    font-size: 14px;
+    border: none;
+    background-color: aliceblue;
+}
+
 .container{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -87,6 +94,7 @@ body {
             button{
                 width: 120px;
                 height: 40px;
+                color: #000;
                 border: 1px solid rgb(170, 136, 90);
                 border-radius: 5px;
                 background-color: rgb(170, 136, 90);
@@ -124,12 +132,7 @@ body {
                     justify-content: space-between;
 
 
-                    button{
-                        color: gray;
-                        font-size: 14px;
-                        border: none;
-                        background-color: aliceblue;
-                    }
+                    
 
                     p{
                         margin-top: 2rem;
@@ -213,27 +216,56 @@ body {
                 &-chart{
                     grid-row: 2/4;
 
-
-                    .chart-out{
-                        margin: 0 auto;
+                    .chart-out-1{
+                        width: 250px;
+                        height: 250px;
                         border: 1px solid white;
-                        border-radius: 50%;
-                        width: 300px;
-                        height: 300px;
                         background-color: gray;
+                        opacity: .1;
+                        border-radius: 50%;
                         display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
                         justify-content: center;
                         align-items: center;
 
-                        .chart-in{
-                            margin: auto;
+
+                        .chart-out{
+                            margin: 0 auto;
                             border: 1px solid white;
                             border-radius: 50%;
                             width: 200px;
                             height: 200px;
+                            background-image: conic-gradient(blue 0deg, blue 190deg, orange 190deg, orange 300deg, aqua 300deg, aqua 360deg);
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 3;
+                            
+    
+                            .chart-in{
+                                margin: auto;
+                                border: 1px solid white;
+                                border-radius: 50%;
+                                background-color: gray;
+                                width: 150px;
+                                height: 150px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                z-index: 4;
+
+                                .chart-in-1{
+                                    width: 100px;
+                                    height: 100px;
+                                    background-color: #fff;
+                                    border: 1px solid white;
+                                    border-radius: 50%;
+                                    z-index: 5;
+                                }
+                            }
                         }
+
                     }
                 }
             }
@@ -269,13 +301,20 @@ body {
             }
 
             .summary-holder{
+                grid-column: 1/3;
+
+
                 &-title{
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
+                    background-color: #fff;
 
                     &-1{
                         display: flex;
                         flex-direction: row;
+                        justify-content: space-between;
+                        
                     }
                 }
 
@@ -283,6 +322,7 @@ body {
         }
     }
 }
+
 
 
 
