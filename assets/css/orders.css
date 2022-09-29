@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&display=swap");
+body {
+  background-color: antiquewhite;
+  font-family: "inter";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.left-nav {
+  margin: 0 auto 0 1rem;
+  padding: 1rem;
+  background-color: beige;
+  width: 65px;
+}
+.left-nav .dashboard-btn {
+  border: 0;
+  background-color: beige;
+  border-radius: 8px;
+  color: gray;
+  width: 100%;
+  height: 3rem;
+}
+.left-nav p {
+  color: gray;
+  font-size: 18px;
+}
+.left-nav p span {
+  padding-right: 1rem;
+}
+.left-nav p span #p-span {
+  border: 1px solid black;
+  color: #fff;
+  background-color: orange;
+  border-radius: 50%;
+}
+.left-nav #p {
+  border: 0;
+  background-color: beige;
+  border-radius: 8px;
+  color: gray;
+  width: 100%;
+  height: 3rem;
+}
+.left-nav p:nth-child(2) {
+  background-color: blue;
+}
+
+.left-nav:hover {
+  width: 65px;
+}
+.left-nav:hover #text-nav {
+  opacity: 1;
+}
+
+.right-side {
+  background-color: rgb(167, 174, 174);
+}
+.right-side .header {
+  background-color: rgb(255, 255, 255);
+}
+.right-side .header div h1 {
+  color: black;
+}
+.right-side .header div div span:first:child {
+  color: blue;
+}
+.right-side .right-head {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.right-side .right-head-order {
+  margin-left: 1rem;
+}
+.right-side .right-head-new {
+  margin-right: 2rem;
+}
+.right-side .right-head-new p {
+  background-color: rgb(55, 55, 189);
+  color: #fff;
+  border-radius: 15px;
+  padding: 1em;
+}
+.right-side .right-top {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  margin-top: -68rem;
+}
+.right-side .right-top-orders {
+  margin: 0 1rem 0 1rem;
+  background-color: #fff;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.right-side .right-top-orders .sale-summary-holder .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-orders .sale-summary-holder .orders button {
+  margin-top: -1rem;
+}
+.right-side .right-top-orders .sale-summary-holder .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+}
+.right-side .right-top-orders .sale-summary-holder .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-orders .sale-summary-holder .price p:last-child {
+  margin-right: 4rem;
+}
+.right-side .right-top-canceled {
+  margin: 0 1rem 0 1rem;
+  background-color: #fff;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.right-side .right-top-canceled .sale-summary-holder .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-canceled .sale-summary-holder .orders button {
+  margin-top: -1rem;
+}
+.right-side .right-top-canceled .sale-summary-holder .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+}
+.right-side .right-top-canceled .sale-summary-holder .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-canceled .sale-summary-holder .price p:first-child span {
+  color: red;
+  font-size: 11px;
+}
+.right-side .right-top-canceled .sale-summary-holder .price p:last-child {
+  margin-right: 4rem;
+}
+.right-side .right-top-abamdoned {
+  margin: 0 1rem 0 1rem;
+  background-color: #fff;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .orders button {
+  margin-top: -1rem;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .title p {
+  font-size: 12px;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .title p:first-child {
+  color: red;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .price p:first-child span {
+  color: green;
+  font-size: 11px;
+}
+.right-side .right-top-abamdoned .sale-summary-holder .price p:last-child {
+  margin-right: 4rem;
+}
+.right-side .customer-orders {
+  margin: 0 1rem 0 1rem;
+  margin-top: -56rem;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 700px;
+  overflow: scroll;
+}
+.right-side .customer-orders-title {
+  display: flex;
+  justify-content: space-between;
+}
+.right-side .customer-orders-title-head {
+  padding: 1rem;
+}
+.right-side .customer-orders-title-search {
+  display: flex;
+  justify-content: space-between;
+}
+.right-side .customer-orders-title-search p {
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-right: 1rem;
+  color: gray;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.right-side .customer-orders-title-search p span {
+  margin-right: 1rem;
+}
+.right-side .customer-orders-title-search p span:last-child {
+  margin-left: 1rem;
+}
+.right-side .customer-orders-title-search p:first-child {
+  width: 180px;
+}
+.right-side .customer-orders-body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.right-side .customer-orders-body table #line-break {
+  width: 90%;
+}
+.right-side .customer-orders-body table td {
+  padding: 1rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(78, 70, 70);
+}
+.right-side .customer-orders-body table td span {
+  margin-top: 1rem;
+}
+.right-side .customer-orders-body table #action p {
+  background-color: rgba(94, 99, 102, 0.08);
+  border: gray;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.right-side .customer-orders-body table #action p span {
+  margin-left: 1rem;
+}
+.right-side .customer-orders-body table #complete P {
+  background-color: rgba(85, 112, 241, 0.16);
+  color: green;
+  border: rgba(50, 147, 111, 0.16);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.right-side .customer-orders-body table #progress p {
+  background-color: rgba(85, 112, 241, 0.16);
+  color: #5570F1;
+  border: rgba(85, 112, 241, 0.16);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.right-side .customer-orders-body table #pending p {
+  background-color: #FFF2E2;
+  color: #1C1D22;
+  border: #FFF2E2;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+hr {
+  width: 95%;
+}
+
+/*# sourceMappingURL=orders.css.map */
